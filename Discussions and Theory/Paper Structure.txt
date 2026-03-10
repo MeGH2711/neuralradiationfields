@@ -1,0 +1,38 @@
+1. Introduction
+
+1.1 Background and Motivation: The evolution of 3D reconstruction in Earth observation, moving from traditional Structure-from-Motion (SfM) and Multi-View Stereo (MVS) to deep learning and neural rendering
+1.2 Scope and Organization: The objectives of the survey and a roadmap of the paper.
+
+2. Fundamentals of Neural Rendering
+
+2.1 Neural Radiance Fields (NeRF): Core mechanics, continuous 5D coordinate inputs, Multilayer Perceptrons (MLPs), and differentiable volume rendering
+2.2 3D Gaussian Splatting (3DGS): Explicit scene representation using 3D Gaussian primitives (position, covariance, opacity, spherical harmonics) and alpha-blending rasterization pipelines
+
+4. Neural Radiance Fields (NeRF) in Earth Observation
+
+4.1 Illumination and Shadow Modeling: Frameworks like S-NeRF and Sat-NeRF that incorporate solar direction to explicitly model direct sunlight, ambient sky light, and transient objects
+4.2 Temporal and Seasonal Dynamics: Techniques like Season-NeRF that introduce time variables to render seasonally specific features across multi-date collections
+4.3 True Digital Orthophoto Map (TDOM) Generation: Frameworks like Ortho-NeRF that utilize orthogonal ray sampling (shooting rays vertically upward) rather than central projection to eliminate geometric distortions and jagged edges
+4.4 Scaling to Urban Environments: Chunking strategies (e.g., Block-NeRF, Mega-NeRF) for handling massive city-scale datasets
+
+5. 3D Gaussian Splatting (3DGS) in Earth Observation
+
+5.1 Adapting 3DGS for Satellite Imagery: Frameworks like EOGS and EOGS++ that replace pinhole models with affine approximations, perform internal bundle adjustment via optical flow, and natively render panchromatic data without external pansharpening
+5.2 Appearance-Adaptive and Shadow 3DGS: Methods like SatGS that utilize hierarchical feature embeddings (global and local) and solar angle inputs to adjust Gaussian colors for seasonal changes and shadow shifts
+5.3 Mitigation of Sparse View Degradation: Techniques integrating monocular depth supervision, few-shot Gaussian Splatting (FSGS), and proximity-guided unpooling (e.g., HyGS-TDOM) to constrain geometry when image overlap is poor
+5.4 Gaussian-Based Orthophoto and Mesh Generation: Ortho-3DGS and PG-SAG frameworks that utilize orthogonal projection matrices, semantic-aware grouping, and Truncated Signed Distance Functions (TSDF) for high-fidelity TDOMs and building meshes
+
+6. Comparative Analysis: NeRF vs. 3DGS
+
+6.1 Computational Efficiency: Training and rendering time comparisons (hours/days for NeRF vs. minutes for 3DGS; real-time FPS rendering for 3DGS)
+6.2 Reconstruction Quality: Analysis of geometric fidelity, preservation of high-frequency details (like building edges), and handling of textureless areas
+6.3 Editability and Explicit Control: The advantages of explicit Gaussian representations for scene editing, noise removal (filtering "floaters"), and mesh extraction compared to the "black box" nature of implicit MLPs
+
+7. Open Challenges and Future Directions
+
+7.1 Multi-Modal Integration: The potential for combining optical imagery with LiDAR, SAR, or utilizing multi-spectral satellite data more effectively
+7.2 Improved Handling of Transient Elements: Further refining uncertainty modeling to completely filter out moving vehicles, changing vegetation, and other dynamic scene elements
+7.3 Integration with Geographic Information Systems (GIS): Bridging the gap between computer vision coordinate systems and true high-precision georeferencing for practical mapping applications
+
+9. Conclusion
+Summary of the current state-of-the-art and the transformative potential of explicit Gaussian representations in superseding NeRF for satellite remote sensing and digital twin creation

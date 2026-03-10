@@ -1,0 +1,35 @@
+[1] Wang, X., Xu, Y., Zhang, W., Wang, X., & Zhan, Z. (2025). HyGS-TDOM: A Hybrid Gaussian Splatting Famework for generating TDOMs from both dense and sparse views. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 48, 139-146.
+
+[2] Yang, J., Cai, Z., Wang, T., Ye, T., Gao, H., & Huang, H. (2025). Ortho-3DGS: true digital orthophoto generation from unmanned aerial vehicle imagery using the depth-regulated 3D Gaussian splatting. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing.
+
+[3] Callahan, C. M. (2024). Neural Radiance Fields for the Digitization of Ethnographic Collections: A Comparative Analysis of State-of-the-Art and Established Methods for the 3D Documentation of Cultural Heritage Objects.
+
+[4] Derksen, D., & Izzo, D. (2021). Shadow neural radiance fields for multi-view satellite photogrammetry. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 1152-1161).
+
+[5] Bai, N., Yang, A., Chen, H., & Du, C. (2025). SatGS: Remote sensing novel view synthesis using Multi-temporal satellite images with appearance-adaptive 3DGS. Remote Sensing, 17(9), 1609.
+
+[6] Chen, S., Yan, Q., Qu, Y., Gao, W., Yang, J., & Deng, F. (2025). Ortho-NeRF: generating a true digital orthophoto map using the neural radiance field from unmanned aerial vehicle images. Geo-spatial Information Science, 28(2), 741-760.
+
+[7] Gao, Z., Li, L., Liu, X., Jiao, L., Liu, F., & Yang, S. (2024). Uncertainty guided progressive few-shot learning perception for aerial view synthesis. IEEE Transactions on Multimedia, 27, 1177-1192.
+
+[8] Wang, T., Wang, X., Hou, Y., Xu, Y., Zhang, W., & Zhan, Z. (2025). PG-SAG: Parallel Gaussian splatting for fine-grained large-scale urban buildings reconstruction via semantic-aware grouping. PFG–Journal of Photogrammetry, Remote Sensing and Geoinformation Science, 93(5), 483-498.
+
+[9] Bournez, P., Aira, L. S., Ehret, T., & Facciolo, G. (2025). EOGS++: Earth Observation Gaussian Splatting with Internal Camera Refinement and Direct Panchromatic Rendering. arXiv preprint arXiv:2511.16542.
+
+[10] Xu, H., Ma, L., Guan, H., & Li, J. (2025, August). Large-Scale Urban Scene Reconstruction Using 3D Gaussian Splatting and Satellite Imagery. In IGARSS 2025-2025 IEEE International Geoscience and Remote Sensing Symposium (pp. 6766-6769). IEEE.
+
+[11] Derksen, D., & Izzo, D. (2021). Shadow neural radiance fields for multi-view satellite photogrammetry. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 1152-1161).
+
+[12] Adams, C., Lopez-Francos, I., Deutsch, A., Van Kints, E., & Hammond, A. (2024). Design and Development of a Neural Surface Rendering Model for Lunar Satellite Photogrammetry.
+
+[14] Ding, X., Zhang, X., Song, S., Li, B., Hui, L., & Dai, Y. (2025). Cross-View Geo-Localization via 3D Gaussian Splatting-Based Novel View Synthesis. Remote Sensing, 17(22), 3673.
+
+[15] Atik, M. E. (2025). Comparative assessment of neural radiance fields and 3d Gaussian splatting for point cloud generation from UAV imagery. Sensors, 25(10), 2995.
+
+[16] Gao, K., Lu, D., He, H., Xu, L., Li, J., & Gong, Z. (2025). Enhanced 3d urban scene reconstruction and point cloud densification using gaussian splatting and google earth imagery. IEEE Transactions on Geoscience and Remote Sensing.
+
+[17] Gao, K., Lu, D., He, H., Li, L., Xu, L., Chapman, M. A., & Li, J. (2025). Gaussian Building Mesh (GBM): Extract a Building’s 3D Mesh with Google Earth and Gaussian Splatting. Remote Sensing Applications: Society and Environment, 101807.
+
+[18] Shende, R. (2024). Heritage3DMtl: A Multi-modal UAV Dataset of Heritage Buildings for Digital Preservation (Doctoral dissertation, Concordia University).
+
+[19] Murali, V., Guy, R., Sertac, K., & Rus, D. (2024, October). Learning autonomous driving from aerial imagery. In 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (pp. 3226-3233). IEEE.

@@ -1,0 +1,16 @@
+Illumination and Shadow Modeling
+--------------------------------
+
+In a multi-view satellite photogrammetry, images of the same area are often taken at different times of the day and across different seasons. This variation causes noticeable changes in appearance, most important it also capture the changing sun angles and temporary objects like vehicles and pedestrians \cite{cite5}. The standard NeRF models often struggle with these uncontrollable variations, which often results in creation of visual artifacts, containing blurry textures or inaccurate geometry, specifically in the shadowed regions \cite{cite11}.
+
+To address this challenges, Shadow Neural Radiance Fields (S-NeRF) was introduced which was an explicit shading model which was specifically designed for Earth Observation \cite{cite12}. The S-NeRF separates the lighting from the scene from its inherent surface properties by predicting the base color (albedo) along with the effect of direct sunlight, ambient skylight or climatic vision \cite{cite11, cite12}. By the utilization of the known solar direction vector for every input image, the network predicts an solar visibility function (which performs as a structural shadow mask) and a diffused sky color \cite{cite11}.
+
+This explicit separation supports the S-NeRF to recover accurate 3D geometry even in persistently shaded areas and also allows shadow-free novel view synthesis \cite{cite11}.
+
+Building upon these foundations, Satellite-NeRF (Sat-NeRF) further advances with illumination and transient object modelling. Sat-NeRF directly integrates the Rational Polynomial Coefficient (RPC) camera models which are used in raw satellite imagery and refines them through internal bundle adjustment to improve ray-casting accuracy.
+
+--------------------------------
+
+[5] Bai, N., Yang, A., Chen, H., & Du, C. (2025). SatGS: Remote sensing novel view synthesis using Multi-temporal satellite images with appearance-adaptive 3DGS. Remote Sensing, 17(9), 1609.
+[11] Derksen, D., & Izzo, D. (2021). Shadow neural radiance fields for multi-view satellite photogrammetry. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 1152-1161).
+[12] Adams, C., Lopez-Francos, I., Deutsch, A., Van Kints, E., & Hammond, A. (2024). Design and Development of a Neural Surface Rendering Model for Lunar Satellite Photogrammetry.
